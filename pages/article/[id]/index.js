@@ -18,7 +18,7 @@ const Article = ({ article }) => {
 //getServerSideProps: Fetch data at time of request(not at build time - getStaticProps)
 //getStaticPaths: Dynamically generate paths
 
-export const getServerSideProps = async (context) => {
+export const getStaticProps = async (context) => {
   const res = await fetch(
     `https://jsonplaceholder.typicode.com/posts/${context.params.id}`
   );
@@ -29,6 +29,21 @@ export const getServerSideProps = async (context) => {
         article,
     }
   };
+};
+export const getStaticPaths = async() => {
+    const res = await fetch(
+        `https://jsonplaceholder.typicode.com/posts/`
+      );
+      const articles = await res.json();
+
+
+      const ids = articles.map(article => article.id);
+      const paths = ids.map(id => ({params: {id: id.toString()}}))
+
+      return {
+          paths,
+          fallback: false,
+      }
 };
 
 export default Article;
