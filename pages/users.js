@@ -26,7 +26,7 @@ export async function getStaticProps() {
     props: {
       users,
     },
-
+    // You can use incremental static regeneration using revalidate and fallback
   }
 }
 
