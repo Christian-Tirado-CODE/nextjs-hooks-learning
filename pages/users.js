@@ -1,13 +1,19 @@
 import React from "react";
+import Head from 'next/head'
 
 // users will be populated at build time by getStaticProps()
 function Users({ users }) {
   return (
+    <div>
+      <Head>
+        <title>Users</title>
+      </Head>
     <ul>
       {users.map((users) => (
         <li>{users.name}</li>
       ))}
     </ul>
+    </div>
   )
 }
 
