@@ -1,15 +1,30 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 import {server} from '../../../config/index';
- 
+
+import { useState } from 'react';
+
 const Article = ({ article }) => {
   // const router = useRouter();
   // const {id} = router.query;
+  
+  const [number, setNumber] = useState(0);
+  
+  const sumNumber = ({sumQuantity = 1}) => {
+    setNumber(number + sumQuantity);
+  }
+
+
+  const [name, setName] = useState("");
+  
   return (
     <>
       <h1>{article.title}</h1>
       <p>{article.body}</p>
       <br />
+      <button onClick={sumNumber}>{number}</button>
+      <input type="text" onChange={(e) => setName(e.target.value)} value={name}></input>
+      {name}
 
       <Link href="/articles">Go Back</Link>
     </>
