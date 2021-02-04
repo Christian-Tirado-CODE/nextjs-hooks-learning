@@ -1,0 +1,23 @@
+.SearchBar {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SearchBar__Field {
+    font-size: 16px;
+    width: 80%;
+    margin-right: 10px;
+    padding: 10px;
+    outline: none;
+}
+
+.SearchBar__Icon {
+    width: 35px;
+    cursor: pointer;
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 5px;
+    
+}

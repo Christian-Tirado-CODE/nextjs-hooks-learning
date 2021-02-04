@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import BottomNav from '../components/BottomNav/BottomNav'
+import SearchBar from '../components/SearchBar/searchBar'
 import styles from '../styles/Layout.module.css'
 
 export default function Home() {
@@ -14,7 +16,7 @@ export default function Home() {
         <h1 className={styles.title}>
             Sembrando Sentido - Homepage
         </h1>
-
+        <SearchBar />
 
         
       </main>
@@ -22,6 +24,7 @@ export default function Home() {
       <footer className={styles.footer}>
         
       </footer>
+      <BottomNav />
     </div>
   )
 }
