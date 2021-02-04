@@ -1,8 +1,9 @@
 .Organization {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 150px;
     position: relative;
     text-align: center;
+
 }
 
 .Organization__LogoContainer {
@@ -21,8 +22,8 @@
 
 
 .Organization__Stats {
-    width: 50%;
-    margin: 20px auto 20px;
+    width: 100%;
+    margin: 20px 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 10px;
@@ -41,6 +42,14 @@
     align-items: center;
     padding: 10px;
     cursor: pointer;
+}
+
+.Organization__StatLeftColItem {
+    justify-self: end;
+}
+
+.Organization__StatRightColItem {
+   justify-content: start;
 }
 
 .Organization__StatIcon {

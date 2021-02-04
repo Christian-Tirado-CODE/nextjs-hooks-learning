@@ -7,6 +7,7 @@ import {
   InfoWindow,
   useLoadScript
 } from "@react-google-maps/api";
+import BottomNav from "../../components/BottomNav/BottomNav";
 
 const mapContainerStyle = {
   width: '100vw',
@@ -20,7 +21,7 @@ const center = {
 
 const options = {
   disableDefaultUI: true,
-  zoomControl: true
+  zoomControl: false
 }
 
 const Map = () => {
@@ -57,7 +58,7 @@ const Map = () => {
    
    if(loadError) return "Error loading maps";
    if(!isLoaded) return "Loading";
-  return (
+  return <>
     <GoogleMap
       mapContainerStyle={mapContainerStyle}
       zoom={8}
@@ -100,7 +101,8 @@ const Map = () => {
         )}
         
     </GoogleMap>
-  );
+    <BottomNav />
+  </>;
 };
 
 export default Map;
