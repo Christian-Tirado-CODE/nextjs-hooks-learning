@@ -1,11 +1,11 @@
 import React from 'react';
-import organizationStyles from '../../../styles/Organization.module.css';
-import OrganizationStat from '../OrganizationStat/OrganizationStat';
-const OrganizationStats = () => {
+import userStyles from '../../../styles/User.module.css';
+import UserStat from '../UserStat/UserStat';
+const userStats = () => {
     return (
-        <div className={organizationStyles.Organization__Stats}>
-            <OrganizationStat>
-            <div className={organizationStyles.Organization__StatIcon}>
+        <div className={userStyles.User__Stats}>
+            <UserStat>
+            <div className={userStyles.User__StatIcon}>
             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" class="svg-inline--fa fa-user fa-w-14"
              role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                  <path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 
@@ -14,15 +14,15 @@ const OrganizationStats = () => {
                 </path>
                 </svg>
                 </div>
-                <div className={organizationStyles.Organization__StatText}>
+                <div className={userStyles.User__StatText}>
                     100,000 seguidores 
                 </div>
-            </OrganizationStat>
+            </UserStat>
 
 
 
-            <OrganizationStat>
-            <div className={organizationStyles.Organization__StatIcon}>
+            <UserStat>
+            <div className={userStyles.User__StatIcon}>
             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marked-alt" class="svg-inline--fa fa-map-marked-alt fa-w-18" 
             role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
             <path fill="currentColor" d="M288 0c-69.59 0-126 56.41-126 126 0 56.26 82.35 
@@ -35,15 +35,15 @@ const OrganizationStats = () => {
                 </path>
                 </svg>
                 </div>
-                <div className={organizationStyles.Organization__StatText}>
+                <div className={userStyles.User__StatText}>
                     5 events
                 </div>
-            </OrganizationStat>
+            </UserStat>
            
 
 
-            <OrganizationStat>
-            <div className={organizationStyles.Organization__StatIcon}>
+            <UserStat>
+            <div className={userStyles.User__StatIcon}>
             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="trophy" 
             class="svg-inline--fa fa-trophy fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 576 512"><path fill="currentColor" d="M552 64H448V24c0-13.3-10.7-24-24-24H152c-13.3 
@@ -57,20 +57,20 @@ const OrganizationStats = () => {
             </path>
             </svg>
                 </div>
-                <div className={organizationStyles.Organization__StatText}>
+                <div className={userStyles.User__StatText}>
                     5 logros 
                 </div>
 
-            </OrganizationStat>
+            </UserStat>
 
 
 
-            <OrganizationStat>
+            <UserStat>
 
-            </OrganizationStat>
+            </UserStat>
             
         </div>
     );
 };
 
-export default OrganizationStats;
+export default userStats;
