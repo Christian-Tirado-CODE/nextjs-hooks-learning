@@ -8,7 +8,7 @@ import {
   useLoadScript
 } from "@react-google-maps/api";
 import BottomNav from "../../components/BottomNav/BottomNav";
-
+import Head from 'next/head';
 const mapContainerStyle = {
   width: '100vw',
   height: '100vh'
@@ -59,6 +59,11 @@ const Map = () => {
    if(loadError) return "Error loading maps";
    if(!isLoaded) return "Loading";
   return <>
+       <Head>
+        <title>Sembrando Sentido - Home Page</title>
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="keywords" content="web development, programming" />
+      </Head>
     <GoogleMap
       mapContainerStyle={mapContainerStyle}
       zoom={8}

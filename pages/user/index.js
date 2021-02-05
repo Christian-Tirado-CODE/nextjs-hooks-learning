@@ -8,6 +8,11 @@ import userStyles from '../../styles/User.module.css';
 const user = () => {
     return (
         <>
+        <Head>
+        <title>Sembrando Sentido - User</title>
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="keywords" content="web development, programming" />
+      </Head>
             <div className={userStyles.User__SettingsIcon}>
             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cog" class="svg-inline--fa fa-cog fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" 
             viewBox="0 0 512 512">
